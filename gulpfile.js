@@ -23,7 +23,7 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([ autoprefixer() ]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
@@ -52,12 +52,19 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("images", function() {
+gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.jpegtran({ progressive: true }),
+      imagemin.svgo({
+        plugins: [
+          { cleanupIDs: false },
+          { removeViewBox: false },
+          { convertPathData: false },
+          { mergePaths: false },
+        ],
+      })
     ]))
 
     .pipe(gulp.dest("source/img"));
@@ -66,13 +73,13 @@ gulp.task("images", function() {
 
 gulp.task("webp", function () {
   return gulp.src("source/img/files/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
+    .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("source/img/files"));
 });
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/{icon-*,htmlacademy*}.svg")
-    .pipe(svgstore({inlineSvg: true}))
+    .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite_auto.svg"))
     .pipe(gulp.dest("build/img"));
 });
@@ -89,7 +96,7 @@ gulp.task("scripts", function () {
   return gulp.src([
     "source/js/vendor/*.js",
     "source/js/modules/*.js",
-    ])
+  ])
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(concat('main.js'))
@@ -109,10 +116,10 @@ gulp.task("copy", function () {
     "source/apple-touch-icon.png",
     "source/browserconfig.xml",
     "source/manifest.json"
-    ], {
-      base: "source"
-    })
-  .pipe(gulp.dest("build"));
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("clean", function () {

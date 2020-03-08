@@ -1,0 +1,65 @@
+.catalogue {
+  position: relative;
+
+  width: 48.62%;
+
+  &:hover &__list {
+    display: flex;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__list {
+    position: absolute;
+
+    display: none;
+    flex-direction: column;
+
+    width: 1040px;
+    height: 162px;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 34px;
+
+    list-style: none;
+
+    background-color: $goldenrod;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-right: 59px;
+  }
+
+  &__link {
+    font-family: $openSans;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 36px;
+
+    letter-spacing: -0.2px;
+
+    color: $black;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

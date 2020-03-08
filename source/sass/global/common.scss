@@ -59,3 +59,31 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+.btn-res {
+  font: inherit;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  color: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+.btn {
+  display: block;
+  overflow: hidden;
+
+  user-select: none;
+  transition: background-color 0.5s ease;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 0.1em;
+  background-color: #fb565a;
+}

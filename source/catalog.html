@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +19,111 @@
   <link rel="preload" href="./fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  <h1>Моноподы для селфи</h1>
+
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <nav class="header__nav nav">
+          <a class="nav__logo" href="index.html">
+            <img src="img/logo-device.svg" alt="Девайс" class="logo" width="163" height="35">
+          </a>
+          <div class="nav__user-tools user-tools">
+            <form class="user-tools__form search-form" action="https://echo.htmlacademy.ru" method="GET">
+              <label class="search-form__label" for="search" aria-label="Поиск по сайту">
+                <svg role="img" aria-hidden="true" width="16" height="16">
+                  <use xlink:href="#icon-search" x="0" y="0"></use>
+                </svg>
+              </label>
+              <input class="search-form__input" type="search" name="search" id="search" autocomplete="off"
+                placeholder="Поиск по сайту">
+              <button class="btn-res search-form__btn" type="submit">Найти</button>
+            </form>
+            <div class="user-tools__wrapper">
+              <ul class="user-tools__list user-tools__list--sing-in">
+                <li class="user-tools__item user-tools__item--user">
+                  <a href="#" class="user-tools__link user-tools__link--user">
+                    <svg role="img" aria-hidden="true" width="13" height="12">
+                      <use xlink:href="#icon-user" x="0" y="0"></use>
+                    </svg>
+                    Валентин Петухов
+                  </a>
+                </li>
+                <li class="user-tools__link">
+                  <a href="#" class="sing-in__link user-tools__link">Выйти</a>
+                </li>
+              </ul>
+              <ul class="user-tools__list user-tools__list--purchase">
+                <li class="user-tools__item">
+                  <a href="#" class="user-tools__link user-tools__link--purchase">
+                    <svg role="img" aria-hidden="true" width="10" height="10">
+                      <use xlink:href="#icon-compare" x="0" y="0"></use>
+                    </svg>
+                    Сравнить
+                  </a>
+                </li>
+                <li class="user-tools__item">
+                  <a href="#" class="user-tools__link user-tools__link--purchase">
+                    <svg role="img" aria-hidden="true" width="12" height="12">
+                      <use xlink:href="#icon-cart" x="0" y="0"></use>
+                    </svg>
+                    Корзина
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="nav__main-nav main-nav">
+            <li class="main-nav__item catalogue">
+              <div class="catalogue__wrapper">
+                <a class="main-nav__link main-nav__link--catalogue" href="#">Каталог товаров</a>
+                <svg role="img" aria-hidden="true" width="16" height="16">
+                  <use xlink:href="#icon-plus" x="0" y="0"></use>
+                </svg>
+              </div>
+              <ul class="catalogue__list">
+                <li class="catalogue__item">
+                  <a class="catalogue__link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="catalogue__item">
+                  <a class="catalogue__link" href="#">Моноподы для селфи</a>
+                </li>
+                <li class="catalogue__item">
+                  <a class="catalogue__link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="catalogue__item">
+                  <a class="catalogue__link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="catalogue__item">
+                  <a class="catalogue__link" href="#">Умные часы</a>
+                </li>
+                <li class="catalogue__item">
+                  <a class="catalogue__link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Гарантия</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- /.header -->
 
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

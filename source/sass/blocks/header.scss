@@ -1,0 +1,13 @@
+.header {
+  &__wrapper {
+    background-color: $goldenrod;
+    background-image: linear-gradient($white 40px, $goldenrod 40px);
+  }
+
+  &__nav {
+    width: 1040px;
+    margin: 0 auto;
+    padding-top: 22px;
+    padding-bottom: 46px;
+  }
+}

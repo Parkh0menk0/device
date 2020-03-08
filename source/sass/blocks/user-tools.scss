@@ -1,0 +1,91 @@
+.user-tools {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: start;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+
+    width: 48.08%;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &--sing-in {
+      width: 57.4%;
+    }
+
+    &--purchase {
+      width: 42.6%;
+    }
+  }
+
+  &__item {
+    margin-right: 45px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--user {
+      margin-right: 19px;
+    }
+  }
+
+  &__link {
+    font-family: $openSans;
+    font-weight: 300;
+
+    position: relative;
+
+    opacity: 0.3;
+    color: $black;
+
+    svg {
+      position: absolute;
+      top: 3px;
+      left: 0;
+
+      fill: $black;
+    }
+
+    &--user {
+      padding-left: 26px;
+
+      letter-spacing: 0.2px;
+
+      opacity: 1;
+    }
+
+    &--purchase {
+      padding-left: 20px;
+
+      opacity: 1;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

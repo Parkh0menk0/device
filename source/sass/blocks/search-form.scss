@@ -1,0 +1,89 @@
+.search-form {
+  display: flex;
+  flex-direction: row;
+
+  width: 51.92%;
+
+  justify-content: start;
+  align-items: center;
+
+  &__label {
+    position: relative;
+
+    min-width: 37px;
+
+    svg {
+      position: absolute;
+      bottom: -7px;
+      left: 3px;
+
+      fill: $black;
+    }
+  }
+
+  &__input {
+    width: 320px;
+
+    color: $black;
+    border: none;
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus + .search-form__btn {
+      opacity: 1;
+    }
+
+    &::placeholder {
+      font-family: $openSans;
+      font-weight: 300;
+
+      opacity: 0.3;
+    }
+
+    &:hover::placeholder {
+      opacity: 0.6;
+    }
+  }
+
+  &__btn {
+    position: relative;
+
+    width: 85px;
+    padding: 7px 7px 8px;
+
+    opacity: 0;
+    border: 2px solid $black;
+
+    &:hover {
+      color: $white;
+      background-color: $black;
+    }
+
+    &:active {
+      opacity: 1;
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $black;
+    }
+
+    &:hover::before,
+    &:active::before {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      bottom: -2px;
+      left: -358px;
+
+      width: 441px;
+      height: 2px;
+
+      content: "";
+
+      background-color: $black;
+    }
+  }
+}
