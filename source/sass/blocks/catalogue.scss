@@ -3,7 +3,7 @@
 
   width: 48.62%;
 
-  &:hover &__list {
+  &:hover &__drop-down {
     display: flex;
   }
 
@@ -16,22 +16,28 @@
     flex-wrap: wrap;
   }
 
-  &__list {
+  &__drop-down {
     position: absolute;
 
     display: none;
-    flex-direction: column;
+    flex-direction: row;
 
     width: 1040px;
     height: 162px;
-    margin: 0;
-    padding: 0;
     padding-top: 20px;
     padding-bottom: 34px;
 
-    list-style: none;
-
     background-color: $goldenrod;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
 
     justify-content: flex-start;
     align-items: flex-start;
