@@ -2,22 +2,30 @@
   display: flex;
   flex-direction: row;
 
+  padding-bottom: 58px;
+
   background-color: $white;
   background-image: linear-gradient($goldenrod 113px, $white 113px);
 
   justify-content: flex-start;
   align-items: flex-start;
 
-  &--1 &__content::after {
-    content: "01";
+  &--1 {
+    .lead-slide__content::after {
+      content: "0" counter(numbers);
+    }
   }
 
-  &--2 &__content::after {
-    content: "02";
+  &--2 {
+    .lead-slide__content::after {
+      content: "0" counter(numbers);
+    }
   }
 
-  &--3 &__content::after {
-    content: "03";
+  &--3 {
+    .lead-slide__content::after {
+      content: "0" counter(numbers);
+    }
   }
 
   &__picture {
@@ -62,6 +70,8 @@
       z-index: -1;
       top: 64px;
       right: 9px;
+
+      counter-increment: numbers;
 
       color: $white;
     }

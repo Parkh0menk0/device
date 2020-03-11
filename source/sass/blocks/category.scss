@@ -1,0 +1,76 @@
+.category {
+  font-family: $gilroy;
+  font-size: 15px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 24px;
+
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+
+  width: 160px;
+
+  letter-spacing: 0.4px;
+
+  color: $black;
+
+  &__title {
+    margin: 0;
+    order: 2;
+  }
+
+  &__content {
+    position: relative;
+
+    height: 160px;
+    margin: 0;
+    margin-bottom: 33px;
+
+    background-color: $goldenrod;
+
+    order: 1;
+
+    svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      margin: auto;
+
+      fill: $black;
+    }
+  }
+
+  &--monopods {
+    .category__title {
+      max-width: 127px;
+    }
+
+    svg {
+      top: 38px;
+    }
+  }
+
+  &:hover {
+    .category__content {
+      background-color: $gold;
+    }
+  }
+
+  &:active {
+    .category__title {
+      opacity: 0.3;
+    }
+
+    .category__content {
+      background-color: $gold;
+
+      svg {
+        opacity: 0.3;
+      }
+    }
+  }
+}

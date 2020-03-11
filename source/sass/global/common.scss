@@ -96,4 +96,8 @@ input[type="radio"].visually-hidden {
     background-image: none;
     background-color: $gold;
   }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

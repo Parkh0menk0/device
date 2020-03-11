@@ -131,7 +131,7 @@
     <section class="lead">
       <h2 class="visually-hidden">Предосмотр товаров</h2>
       <div class="container">
-        <div class="swiper-container" role="slider">
+        <div class="swiper-container" role="slider" aria-valuemax="3" aria-valuemin="1" aria-valuenow="1">
           <div class="swiper-wrapper">
             <div class="lead-slide lead-slide--1 swiper-slide">
               <div class="lead-slide__picture">
@@ -215,6 +215,76 @@
       </div>
     </section>
     <!-- /.lead -->
+
+    <section class="popular">
+      <h2 class="visually-hidden">Популярные товары</h2>
+      <div class="container">
+        <ul class="popular__list">
+          <li class="popular__item">
+            <a class="popular__link category" href="#">
+              <h3 class="category__title">Виртуальная реальность</h3>
+              <p class="category__content">
+                <svg role="img" aria-hidden="true" width="97" height="55">
+                  <use xlink:href="#icon-popular-1" x="0" y="0"></use>
+                </svg>
+              </p>
+            </a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link category category--monopods" href="#">
+              <h3 class="category__title">Моноподы для селфи</h3>
+              <p class="category__content">
+                <svg role="img" aria-hidden="true" width="86" height="117">
+                  <use xlink:href="#icon-popular-2" x="0" y="0"></use>
+                </svg>
+              </p>
+            </a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link category" href="#">
+              <h3 class="category__title">Экшн-камеры</h3>
+              <p class="category__content">
+                <svg role="img" aria-hidden="true" width="71" height="87">
+                  <use xlink:href="#icon-popular-3" x="0" y="0"></use>
+                </svg>
+              </p>
+            </a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link category" href="#">
+              <h3 class="category__title">Фитнес-браслеты</h3>
+              <p class="category__content">
+                <svg role="img" aria-hidden="true" width="107" height="65">
+                  <use xlink:href="#icon-popular-4" x="0" y="0"></use>
+                </svg>
+              </p>
+            </a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link category" href="#">
+              <h3 class="category__title">Умные часы</h3>
+              <p class="category__content">
+                <svg role="img" aria-hidden="true" width="56" height="98">
+                  <use xlink:href="#icon-popular-5" x="0" y="0"></use>
+                </svg>
+              </p>
+            </a>
+          </li>
+          <li class="popular__item">
+            <a class="popular__link category" href="#">
+              <h3 class="category__title">Квадрокоптеры</h3>
+              <p class="category__content">
+                <svg role="img" aria-hidden="true" width="132" height="69">
+                  <use xlink:href="#icon-popular-6" x="0" y="0"></use>
+                </svg>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /.popular -->
+
   </main>
 
   <script src="js/swiper.min.js"></script>
