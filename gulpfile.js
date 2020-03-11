@@ -111,7 +111,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source//*.ico",
     "source/apple-touch-icon.png",
     "source/browserconfig.xml",
@@ -122,9 +121,19 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("swiper", function () {
+  return gulp.src([
+    "node_modules/swiper/css/swiper.min.css",
+    "node_modules/swiper/js/swiper.min.js"
+  ], {
+    base: "node_modules/swiper"
+  })
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "scripts", "sprite", "html", "images", "webp"));
+gulp.task("build", gulp.series("clean", "copy", "swiper", "css", "scripts", "sprite", "html", "images", "webp"));
 gulp.task("start", gulp.series("build", "server"));

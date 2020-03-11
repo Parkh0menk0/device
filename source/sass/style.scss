@@ -1,12 +1,17 @@
 @charset "UTF-8";
-// Глобальные стили
+
+/* Global styles */
+
 @import "vendor/normalize";
 @import "vendor/swiper";
 @import "global/variables";
 @import "global/fonts";
 @import "global/mixins";
 @import "global/common";
-// Общие стили
+
+/* Common styles */
+
+/* header */
 @import "blocks/header";
 @import "blocks/nav";
 @import "blocks/logo";
@@ -14,3 +19,15 @@
 @import "blocks/search-form";
 @import "blocks/main-nav";
 @import "blocks/catalogue";
+
+/* main */
+@import "blocks/swiper";
+@import "blocks/lead-slide";
+// @import "blocks/nav";
+// @import "blocks/logo";
+// @import "blocks/user-tools";
+// @import "blocks/search-form";
+// @import "blocks/main-nav";
+// @import "blocks/catalogue";
+
+/* footer */

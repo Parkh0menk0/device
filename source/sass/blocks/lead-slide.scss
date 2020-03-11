@@ -1,0 +1,150 @@
+.lead-slide {
+  display: flex;
+  flex-direction: row;
+
+  background-color: $white;
+  background-image: linear-gradient($goldenrod 113px, $white 113px);
+
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &--1 &__content::after {
+    content: "01";
+  }
+
+  &--2 &__content::after {
+    content: "02";
+  }
+
+  &--3 &__content::after {
+    content: "03";
+  }
+
+  &__picture {
+    display: flex;
+
+    width: 48.2%;
+    margin-right: 40px;
+
+    picture {
+      margin: auto;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+
+    width: 45%;
+    padding-top: 82px;
+
+    &::before {
+      position: absolute;
+      z-index: 1;
+      top: 39px;
+      left: 1px;
+
+      width: 100px;
+      height: 7px;
+
+      content: "";
+
+      background-color: $white;
+    }
+
+    &::after {
+      font-family: $gilroy;
+      font-size: 182px;
+      font-weight: 800;
+      font-style: normal;
+
+      position: absolute;
+      z-index: -1;
+      top: 64px;
+      right: 9px;
+
+      color: $white;
+    }
+  }
+
+  &__title {
+    font-family: $gilroy;
+    font-size: 47px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 56px;
+
+    margin: 0;
+    margin-bottom: 18px;
+
+    letter-spacing: 0.5px;
+
+    color: $black;
+  }
+
+  &__description {
+    font-family: $openSans;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+
+    max-width: 483px;
+    margin: 0;
+    margin-bottom: 43px;
+
+    letter-spacing: 0.1px;
+
+    color: $grey;
+  }
+
+  &__link {
+    width: 36.9%;
+    margin-bottom: 49px;
+
+    letter-spacing: 3.5px;
+  }
+
+  &__table {
+    font-style: normal;
+
+    border-collapse: collapse;
+
+    color: $grey;
+
+    tr {
+      td {
+        padding: 0;
+
+        letter-spacing: 0.2px;
+      }
+
+      &:first-child {
+        font-family: $gilroy;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 48px;
+      }
+
+      &:last-child {
+        font-family: $openSans;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 20px;
+
+        td {
+          padding: 8px 0;
+
+          &:first-child,
+          &:last-child {
+            width: 159px;
+          }
+
+          &:nth-child(2) {
+            width: 139px;
+          }
+        }
+      }
+    }
+  }
+}

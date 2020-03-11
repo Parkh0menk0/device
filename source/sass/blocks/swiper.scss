@@ -1,0 +1,38 @@
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 29.2%;
+  left: 85.1%;
+  width: 101px;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  opacity: 1;
+  border: 1px solid $black;
+  border-radius: 50%;
+  background-color: $white;
+  margin: 0 10.5px;
+  width: 12px;
+  height: 12px;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #b6cdf0, 0 0 0 3px #649af2, 0 0 0 4px #b6cdf0;
+  }
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border: 1px solid $black;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}

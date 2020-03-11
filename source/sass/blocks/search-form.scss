@@ -68,8 +68,13 @@
       background-color: $black;
     }
 
+    &:focus {
+      opacity: 1;
+    }
+
     &:hover::before,
-    &:active::before {
+    &:active::before,
+    &:focus::before {
       display: none;
     }
 

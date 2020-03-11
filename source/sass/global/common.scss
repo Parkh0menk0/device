@@ -77,13 +77,23 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 
   user-select: none;
-  transition: background-color 0.5s ease;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
 
-  color: #ffffff;
-  border: 1px solid transparent;
-  border-radius: 0.1em;
-  background-color: #fb565a;
+  font-family: $gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 24px;
+
+  color: $black;
+  background-color: $white;
+  background-image: linear-gradient($white 40%, $gold 40%, $gold 60%, $white 60%);
+  padding: 0.5em 0.8em 0.4em;
+
+  &:hover {
+    background-image: none;
+    background-color: $gold;
+  }
 }

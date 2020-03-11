@@ -17,6 +17,7 @@
   <link rel="preload" href="./fonts/gilroylight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="./fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -128,17 +129,95 @@
 
   <main>
     <section class="lead">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
-          <div class="swiper-slide"></div>
+      <h2 class="visually-hidden">Предосмотр товаров</h2>
+      <div class="container">
+        <div class="swiper-container" role="slider">
+          <div class="swiper-wrapper">
+            <div class="lead-slide lead-slide--1 swiper-slide">
+              <div class="lead-slide__picture">
+                <picture>
+                  <source type="image/webp" srcset="img/files/main-slider-1-desktop@1x.webp 1x">
+                  <img class="lead-slide__img" src="img/files/main-slider-1-desktop@1x.png" width="526" height="486"
+                    alt="Моноподы для селфи">
+                </picture>
+              </div>
+              <div class="lead-slide__content">
+                <h3 class="lead-slide__title">Делай селфи,<br>как Бен Стиллер!</h3>
+                <p class="lead-slide__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
+                  (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <a class="lead-slide__link btn" href="#">Подробнее</a>
+                <table class="lead-slide__table">
+                  <tr>
+                    <td>8,5 м</td>
+                    <td>5 кг</td>
+                    <td>Карбон</td>
+                  </tr>
+                  <tr>
+                    <td>Длина палки</td>
+                    <td>Вес палки</td>
+                    <td>Материал</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="lead-slide lead-slide--2 swiper-slide">
+              <div class="lead-slide__picture">
+                <picture>
+                  <source type="image/webp" srcset="img/files/main-slider-2-desktop@1x.webp 1x">
+                  <img class="lead-slide__img" src="img/files/main-slider-2-desktop@1x.png" width="526" height="486"
+                    alt="Моноподы для селфи">
+                </picture>
+              </div>
+              <div class="lead-slide__content">
+                <h3 class="lead-slide__title">Худеем<br>правильно!</h3>
+                <p class="lead-slide__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+                  занятия и соблюдать диету.</p>
+                <a class="lead-slide__link btn" href="#">Подробнее</a>
+                <table class="lead-slide__table">
+                  <tr>
+                    <td>48 часов</td>
+                  </tr>
+                  <tr>
+                    <td>Без подзарядки</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="lead-slide lead-slide--3 swiper-slide">
+              <div class="lead-slide__picture">
+                <picture>
+                  <source type="image/webp" srcset="img/files/main-slider-3-desktop@1x.webp 1x">
+                  <img class="lead-slide__img" src="img/files/main-slider-3-desktop@1x.png" width="526" height="486"
+                    alt="Моноподы для селфи">
+                </picture>
+              </div>
+              <div class="lead-slide__content">
+                <h3 class="lead-slide__title">Порхает как бабочка, жалит как пчела!</h3>
+                <p class="lead-slide__description">Этот обычный, на первый взгляд, квадрокоптер оснащен
+                  мощным лазером, замаскированным под стандартную камеру.
+                </p>
+                <a class="lead-slide__link btn" href="#">Подробнее</a>
+                <table class="lead-slide__table">
+                  <tr>
+                    <td>800 м</td>
+                    <td>50 м</td>
+                  </tr>
+                  <tr>
+                    <td>Дальность полета</td>
+                    <td>Радиус поражения</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
     </section>
+    <!-- /.lead -->
   </main>
 
+  <script src="js/swiper.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

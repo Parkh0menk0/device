@@ -18,14 +18,15 @@
 
   &__drop-down {
     position: absolute;
+    z-index: 10;
+    left: -60px;
 
     display: none;
     flex-direction: row;
 
-    width: 1040px;
+    width: 1160px;
     height: 162px;
-    padding-top: 20px;
-    padding-bottom: 34px;
+    padding: 20px 60px 34px 60px;
 
     background-color: $goldenrod;
   }
