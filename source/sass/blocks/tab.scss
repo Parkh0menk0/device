@@ -1,0 +1,102 @@
+.tab {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+
+    width: 24.5%;
+    padding-top: 80px;
+    padding-bottom: 71px;
+
+    border-right: 7px solid $black;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__control {
+    font-family: $gilroy;
+    font-size: 17px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 24px;
+
+    width: 160px;
+    margin-bottom: 24px;
+    padding: 9px 8px 7px 12px;
+
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+    word-wrap: break-word;
+
+    color: $black;
+    background-image: linear-gradient(transparent 40%, $gold 40%, $gold 60%, transparent 60%);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      background-color: $gold;
+      background-image: none;
+    }
+
+    &.active {
+      position: relative;
+      z-index: 2;
+
+      color: $goldenrod;
+      background-color: $black;
+      background-image: none;
+
+      &::after {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+
+        width: 277px;
+        height: 100%;
+
+        content: "";
+
+        background-color: $black;
+      }
+    }
+  }
+
+  &__content {
+    width: 75.5%;
+    padding-top: 69px;
+    padding-right: 320px;
+    padding-bottom: 77px;
+    padding-left: 117px;
+  }
+
+  &__item {
+    position: relative;
+    display: none;
+
+    svg {
+      position: absolute;
+      bottom: -6px;
+      right: -254px;
+    }
+
+    &.active {
+      display: block;
+    }
+
+    &:last-child {
+      .conditions__content {
+        max-width: 430px;
+      }
+    }
+  }
+}
