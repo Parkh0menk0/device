@@ -1,0 +1,41 @@
+.partners {
+  padding-top: 94px;
+  padding-bottom: 83px;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 260px;
+    filter: grayscale(1);
+
+    img {
+      width: 260px;
+      height: 100px;
+    }
+
+    &:hover {
+      filter: none;
+    }
+  }
+}
