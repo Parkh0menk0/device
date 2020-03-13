@@ -1,0 +1,123 @@
+.feedback {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__about-us,
+  &__contacts {
+    position: relative;
+
+    width: 48.33%;
+    padding-top: 50px;
+    padding-bottom: 82px;
+
+    &::before {
+      position: absolute;
+      top: 2px;
+      left: 0;
+
+      width: 80px;
+      height: 7px;
+
+      content: "";
+
+      background-color: $black;
+    }
+  }
+
+  &__title {
+    font-family: $gilroy;
+    font-size: 47px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1.2;
+
+    margin: 0;
+    margin-bottom: 39px;
+
+    color: $black;
+  }
+
+  &__content {
+    font-family: $openSans;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+
+    max-width: 538px;
+    margin: 0;
+    margin-bottom: 30px;
+
+    letter-spacing: 0.1px;
+
+    color: $grey;
+
+    &:last-of-type {
+      margin-bottom: 39px;
+    }
+  }
+
+  &__list {
+    font-family: $gilroy;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 40px;
+
+    margin: 0;
+    margin-bottom: 54px;
+    padding: 0;
+    padding-top: 27px;
+
+    list-style: none;
+
+    color: $black;
+  }
+
+  &__item {
+    position: relative;
+
+    padding-left: 35px;
+
+    &::before {
+      position: absolute;
+      top: 16px;
+      left: 1px;
+
+      width: 8px;
+      height: 8px;
+
+      content: "";
+
+      border: 2px solid $lightgrey;
+      border-radius: 50%;
+    }
+  }
+
+  &__map {
+    display: block;
+
+    margin-bottom: 59px;
+
+    img {
+      width: 560px;
+      height: 222px;
+    }
+  }
+
+  &__btn {
+    width: 46.43%;
+    margin-bottom: 20px;
+
+    letter-spacing: 3.5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .partners {
   padding-top: 94px;
-  padding-bottom: 83px;
+  padding-bottom: 81px;
 
   &__list {
     display: flex;
@@ -34,7 +34,8 @@
       height: 100px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       filter: none;
     }
   }
