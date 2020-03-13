@@ -74,7 +74,7 @@ gulp.task("images", function () {
 gulp.task("webp", function () {
   return gulp.src("source/img/files/**/*.{png,jpg}")
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("source/img/files"));
+    .pipe(gulp.dest("build/img/files"));
 });
 
 gulp.task("sprite", function () {
@@ -110,7 +110,7 @@ gulp.task("scripts", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
+    "source/img/**/!(icon-*.svg)*",
     "source//*.ico",
     "source/apple-touch-icon.png",
     "source/browserconfig.xml",
