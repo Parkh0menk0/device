@@ -11,6 +11,10 @@
   align-items: center;
   flex-wrap: wrap;
 
+  &__item {
+    margin-right: 39px;
+  }
+
   &__link {
     font-family: $openSans;
     font-size: 15px;

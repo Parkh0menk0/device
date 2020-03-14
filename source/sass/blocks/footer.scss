@@ -1,0 +1,121 @@
+.footer {
+  background-color: $grey;
+
+  &__wrapper {
+    padding-top: 65px;
+  }
+
+  &__user,
+  &__conditions,
+  &__social {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__user {
+    margin-bottom: 30px;
+  }
+
+  &__logo {
+    width: 163px;
+    height: 35px;
+
+    svg {
+      fill: $gold;
+    }
+  }
+
+  &__address,
+  &__tel {
+    font-family: $openSans;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+
+    max-width: 25%;
+    margin: 0;
+
+    letter-spacing: 0.2px;
+
+    color: $white;
+  }
+
+  &__tel {
+    margin-left: 35px;
+  }
+
+  &__user-menu {
+    max-width: 960px;
+
+    li {
+      margin-right: 41px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      color: $white;
+
+      svg {
+        fill: $gold;
+      }
+    }
+  }
+
+  &__conditions {
+    margin-bottom: 58px;
+  }
+
+  &__conditions-menu {
+    width: 37%;
+
+    li {
+      margin-right: 35px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      color: $white;
+    }
+  }
+
+  &__social {
+    &::before {
+      width: 80px;
+      height: 7px;
+      margin-top: 13px;
+      margin-right: 54px;
+
+      content: "";
+
+      background-color: $gold;
+    }
+  }
+
+  &__copyright {
+    margin: 0;
+    margin-left: 108px;
+
+    &:hover {
+      a {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      a {
+        opacity: 0.3;
+      }
+    }
+  }
+}
