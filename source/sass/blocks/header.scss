@@ -8,6 +8,65 @@
     width: 1040px;
     margin: 0 auto;
     padding-top: 22px;
-    padding-bottom: 46px;
+    padding-bottom: 44px;
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 23px;
+  }
+
+  &__logo {
+    flex-basis: 100%;
+    margin-bottom: 7px;
+  }
+
+  &__user-menu {
+    width: 48.08%;
+
+    li {
+      margin-right: 39px;
+
+      &:first-child {
+        width: 49%;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      color: $black;
+
+      svg {
+        fill: $black;
+      }
+    }
+  }
+
+  &__conditions-menu {
+    .conditions-menu__item {
+      margin-right: 35px;
+
+      &:last-child {
+        margin-right: 0;
+        margin-left: auto;
+      }
+    }
+
+    .conditions-menu__link {
+      color: $black;
+
+      & + svg {
+        opacity: 0.3;
+        margin-left: 12px;
+      }
+    }
   }
 }

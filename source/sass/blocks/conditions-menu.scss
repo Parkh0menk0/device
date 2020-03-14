@@ -1,41 +1,25 @@
-.main-nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.conditions-menu {
   display: flex;
   flex-direction: row;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
 
-  &__item {
-    margin-right: 35px;
-
-    &:last-child {
-      margin-right: 0;
-      margin-left: auto;
-    }
-  }
-
-  &__link {
+  a {
     font-family: $gilroy;
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
-    line-height: 24px;
+    line-height: 2;
 
     letter-spacing: 3.5px;
     text-transform: uppercase;
-
-    color: $black;
-
-    &--catalogue {
-      margin-right: 11px;
-    }
-
-    & + svg {
-      opacity: 0.3;
-    }
 
     &:hover {
       opacity: 0.6;

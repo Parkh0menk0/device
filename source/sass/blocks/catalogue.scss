@@ -3,7 +3,7 @@
 
   width: 48.62%;
 
-  &:hover &__drop-down {
+  &:hover &__list {
     display: flex;
   }
 
@@ -16,7 +16,7 @@
     flex-wrap: wrap;
   }
 
-  &__drop-down {
+  &__list {
     position: absolute;
     z-index: 10;
     left: -60px;
@@ -26,19 +26,12 @@
 
     width: 1160px;
     height: 162px;
+    margin: 0;
     padding: 20px 60px 34px 60px;
 
-    background-color: $goldenrod;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-
-    margin: 0;
-    padding: 0;
-
     list-style: none;
+
+    background-color: $goldenrod;
 
     justify-content: flex-start;
     align-items: flex-start;
@@ -51,6 +44,7 @@
   }
 
   &__link {
+    display: block;
     font-family: $openSans;
     font-size: 15px;
     font-weight: 400;

@@ -1,0 +1,55 @@
+.user-menu {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__link {
+    font-family: $openSans;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+
+    position: relative;
+
+    padding-left: 23px;
+
+    letter-spacing: 0.2px;
+
+    &--log-in {
+      padding-left: 26px;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &--log-out {
+      padding-left: 0;
+      opacity: 0.3;
+    }
+
+    svg {
+      position: absolute;
+      bottom: 4px;
+      left: 1px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
