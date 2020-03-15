@@ -1,0 +1,90 @@
+.breadcrumbs {
+  width: 1040px;
+  margin: 0 auto;
+  padding-top: 33px;
+  padding-bottom: 46px;
+
+  &__title {
+    font-family: $gilroy;
+    font-size: 47px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1.2;
+
+    margin: 0;
+    margin-bottom: 20px;
+
+    letter-spacing: 0.5px;
+
+    color: $black;
+  }
+
+  &__list {
+    display: flex;
+
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    list-style: none;
+
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    font-family: $openSans;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 24px;
+
+    position: relative;
+
+    margin-right: 37px;
+    letter-spacing: 0.1px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &::after {
+      content: "\203A";
+
+      position: absolute;
+      top: -1px;
+      right: -19px;
+
+      width: 4px;
+      height: 7px;
+    }
+
+    &--current {
+      opacity: 0.3;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    font: inherit;
+
+    opacity: 0.3;
+    color: $black;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+}
