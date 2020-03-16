@@ -122,20 +122,151 @@
   <main>
 
     <section class="breadcrumbs">
-      <h1 class="breadcrumbs__title">Моноподы для селфи</h1>
+      <div class="container">
+        <div class="breadcrumbs__wrapper">
+          <h1 class="breadcrumbs__title">Моноподы для селфи</h1>
 
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="index.html">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="breadcrumbs__item breadcrumbs__item--current">Моноподы для селфи</li>
-      </ul>
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--current">Моноподы для селфи</li>
+          </ul>
+        </div>
+      </div>
     </section>
     <!-- /.breadcrumbs -->
 
+    <div class="catalog">
+      <div class="catalog__heading">
+        <div class="container">
+          <div class="catalog__content">
+            <div class="catalog__aside">
+              <div class="catalog__menu">
+                <h2 class="catalog__title">Фильтр:</h2>
+              </div>
+            </div>
+            <div class="catalog__main">
+              <div class="catalog__menu">
+                <h2 class="catalog__title">Сортировка:</h2>
+                <div class="catalog__buttons sort-menu" role="menu">
+                  <button type="button" class="btn-res sort-menu__button sort-menu__button--active" role="menuitemradio"
+                    aria-checked="true">По цене</button>
+                  <button type="button" class="btn-res sort-menu__button" role="menuitemradio" aria-checked="false">По
+                    типу</button>
+                  <button type="button" class="btn-res sort-menu__button" role="menuitemradio" aria-checked="false">По
+                    популярности</button>
+                </div>
+                <div class="catalog__controls reverse" role="menu">
+                  <a class="reverse__control" href="#" aria-label="По убыванию" role="menuitemradio"
+                    aria-checked="false">
+                    <svg role="img" aria-hidden="true" width="11" height="10">
+                      <use xlink:href="#icon-up-dir" x="0" y="0"></use>
+                    </svg>
+                  </a>
+                  <a class="reverse__control reverse__control--active" href="#" aria-label="По возрастанию"
+                    role="menuitemradio" aria-checked="true">
+                    <svg role="img" aria-hidden="true" width="11" height="10">
+                      <use xlink:href="#icon-down-dir" x="0" y="0"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="catalog__content">
+          <div class="catalog__aside">
+            <section class="catalog__section">
+              <h2 class="visually-hidden">Фильтр товаров</h2>
+              <form class="filter-form" method="get" action="https://echo.htmlacademy.ru" role="search">
+                <fieldset class="filter-form__fieldset double-range">
+                  <legend class="filter-form__legend double-range__legend">Стоимость</legend>
+                  <div class="double-range__range">
+                    <div class="double-range__controls">
+                      <div class="double-range__scale">
+                        <div class="double-range__bar"></div>
+                      </div>
+                      <div class="double-range__toggle double-range__toggle--min"></div>
+                      <div class="double-range__toggle double-range__toggle--max"></div>
+                    </div>
+                    <div class="double-range__price">
+                      <p class="double-range__wrapper">
+                        <label class="double-range__label" for="min-value">от</label>
+                        <input id="min-value" class="double-range__input" name="min-value" type="number" value="0"
+                          min="0" max="5000">
+                      </p>
+                      <p class="double-range__wrapper">
+                        <label class="double-range__label" for="max-value">до</label>
+                        <input id="max-value" class="double-range__input" name="max-value" type="number" value="5000"
+                          min="1" max="5000">
+                      </p>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="filter-form__fieldset">
+                  <legend class="filter-form__legend">Цвет</legend>
+                  <ul class="filter-form__list" role="listbox">
+                    <li class="filter-form__item" role="option">
+                      <input id="checkbox-option-1" class="visually-hidden" type="checkbox" name="slider"
+                        aria-label="Чёрный" checked>
+                      <label class="filter-form__label" for="checkbox-option-1">Чёрный</label>
+                    </li>
+                    <li class="filter-form__item" role="option">
+                      <input id="checkbox-option-2" class="visually-hidden" type="checkbox" name="benefits-block"
+                        aria-label="Белый">
+                      <label class="filter-form__label" for="checkbox-option-2">Белый</label>
+                    </li>
+                    <li class="filter-form__item" role="option">
+                      <input id="checkbox-option-3" class="visually-hidden" type="checkbox" name="news"
+                        aria-label="Синий" checked>
+                      <label class="filter-form__label" for="checkbox-option-3">Синий</label>
+                    </li>
+                    <li class="filter-form__item" role="option">
+                      <input id="checkbox-option-4" class="visually-hidden" type="checkbox" name="gallery"
+                        aria-label="Красный" checked>
+                      <label class="filter-form__label" for="checkbox-option-4">Красный</label>
+                    </li>
+                    <li class="filter-form__item" role="option">
+                      <input id="checkbox-option-5" class="visually-hidden" type="checkbox" name="basket"
+                        aria-label="Розовый">
+                      <label class="filter-form__label" for="checkbox-option-5">Розовый</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="filter-form__fieldset">
+                  <legend class="filter-form__legend">Bluetooth</legend>
+                  <ul class="filter-form__list" role="listbox">
+                    <li class="filter-form__item" role="option">
+                      <input id="radio-option-1" class="visually-hidden" type="radio" name="bluetooth" value="on"
+                        aria-label="Адаптивная" checked>
+                      <label class="filter-form__label" for="radio-option-1">Есть</label>
+                    </li>
+                    <li class="filter-form__item" role="option">
+                      <input id="radio-option-2" class="visually-hidden" type="radio" name="bluetooth" value="off"
+                        aria-label="Фиксированная">
+                      <label class="filter-form__label" for="radio-option-2">Нет</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <button class="btn-res filter-form__btn" type="submit">Показать</button>
+              </form>
+            </section>
+            <!-- /.filter-form -->
+          </div>
+          <div class="catalog__main">
+            <section class="catalog__section">
+            </section>
+            <!-- /.gallery -->
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <!-- /main -->
 

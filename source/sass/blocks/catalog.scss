@@ -1,0 +1,68 @@
+.catalog {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.08) 32.5%, $white 32.5%);
+
+  &__heading {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    // padding-top: 33px;
+    // padding-bottom: 46px;
+  }
+
+  &__aside {
+    width: 22.5%;
+  }
+
+  &__main {
+    width: 70.6%;
+  }
+
+  &__menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    font-family: $gilroy;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 24px;
+
+    margin: 0;
+    margin-right: 51px;
+
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+
+    color: $black;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__buttons {
+    width: 41%;
+  }
+
+  &__controls {
+    margin-left: auto;
+  }
+
+  &__section {
+    padding-top: 69px;
+    padding-bottom: 77px;
+    padding-left: 58px;
+  }
+}

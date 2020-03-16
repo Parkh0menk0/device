@@ -1,0 +1,89 @@
+.double-range {
+  &__controls {
+    position: relative;
+
+    height: 22px;
+    padding-top: 9px;
+  }
+
+  &__scale {
+    height: 2px;
+
+    background: #d7dcde;
+  }
+
+  &__bar {
+    width: 58%;
+    height: 2px;
+
+    background: #00ca74;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+
+    cursor: pointer;
+
+    border: 8px solid $white;
+    border-radius: 50%;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+
+    &--min {
+      left: -4px;
+    }
+
+    &--max {
+      left: 109px;
+    }
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    margin-right: 38px;
+
+    align-items: center;
+  }
+
+  &__label {
+    font-family: $gilroy;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 21px;
+
+    color: $black;
+    opacity: 0.2;
+    margin-right: 5px;
+  }
+
+  &__input {
+    font-family: $gilroy;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 21px;
+
+    padding: 0;
+
+    opacity: 0.2;
+    color: $black;
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
+  }
+}

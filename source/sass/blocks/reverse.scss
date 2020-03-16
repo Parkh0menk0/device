@@ -1,0 +1,33 @@
+.reverse {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__control {
+    margin-right: 19px;
+
+    transition: opacity 0.5s ease;
+
+    opacity: 0.3;
+    color: $black;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover:not(&--active) {
+      opacity: 0.6;
+    }
+
+    &:active:not(&--active) {
+      opacity: 1;
+    }
+
+    &--active {
+      opacity: 1;
+    }
+  }
+}

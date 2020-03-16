@@ -1,0 +1,39 @@
+.sort-menu {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__button {
+    font-family: $openSans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+
+    margin-right: 29px;
+    margin-bottom: 2px;
+
+    transition: opacity 0.5s ease;
+
+    opacity: 0.3;
+    color: $black;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:hover:not(&--active) {
+      opacity: 0.6;
+    }
+
+    &:active:not(&--active) {
+      opacity: 1;
+    }
+
+    &--active {
+      opacity: 1;
+    }
+  }
+}
