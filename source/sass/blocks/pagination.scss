@@ -1,0 +1,96 @@
+.pagination {
+  background-color: rgba(0, 0, 0, 0.08);
+  margin-top: -11px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__btn {
+    font-family: $gilroy;
+    font-size: 15px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 24px;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: $black;
+
+    padding: 24px 26px 22px 31px;
+
+    &--prev {
+      margin-right: auto;
+      text-align: left;
+    }
+
+    &--next {
+      margin-left: auto;
+      text-align: right;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.08);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+
+    margin: 0;
+    margin-left: 14px;
+    padding: 0;
+
+    list-style: none;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--current {
+      a {
+        color: rgba(0, 0, 0, 1);
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 11px;
+
+    font-family: $gilroy;
+    font-size: 15px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 24px;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: rgba(0, 0, 0, 0.6);
+
+    &:hover {
+      color: rgba(0, 0, 0, 1);
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
