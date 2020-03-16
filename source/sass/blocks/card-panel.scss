@@ -1,0 +1,61 @@
+.card-panel {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+
+  &__buy {
+    text-align: center;
+    font-family: $gilroy;
+    font-size: 17px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 24px;
+
+    width: 100%;
+    padding: 9px 8px 7px 12px;
+
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+    word-wrap: break-word;
+
+    color: $black;
+    background-image: linear-gradient(transparent 40%, $gold 40%, $gold 60%, transparent 60%);
+
+    &:hover {
+      background-color: $gold;
+      background-image: none;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__compare {
+    font-family: $openSans;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 36px;
+
+    letter-spacing: -0.2px;
+
+    color: $black;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.2;
+    }
+  }
+}
