@@ -480,8 +480,7 @@
             </li>
           </ul>
           <p class="footer__copyright">
-            <a href="https://up.htmlacademy.ru/htmlcss/27" aria-label="HTML Academy" target="_blank"
-              rel="noreferrer">
+            <a href="https://up.htmlacademy.ru/htmlcss/27" aria-label="HTML Academy" target="_blank" rel="noreferrer">
               <svg role="img" aria-hidden="true" width="27" height="34">
                 <use xlink:href="#icon-logo-html" x="0" y="0"></use>
               </svg>
@@ -492,6 +491,35 @@
     </div>
   </footer>
   <!-- /.footer -->
+
+  <section class="write-us">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <div class="write-us__content">
+      <form class="write-us__form feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="feedback-form__wrapper">
+          <p class="feedback-form__half">
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" name="name" placeholder="Имя Фамилия" autocomplete="on" required>
+          </p>
+          <p class="feedback-form__half">
+            <label for="email">Ваш e-mail:</label>
+            <input id="email" type="email" name="email" placeholder="email@example.com" autocomplete="on" required>
+          </p>
+        </div>
+        <p class="feedback-form__full">
+          <label for="textarea">Текст письма:</label>
+          <textarea id="textarea" name="textarea">В свободной форме</textarea>
+        </p>
+        <button class="btn-res" type="submit">Отправить</button>
+      </form>
+      <button class="btn-res write-us__close" type="button" aria-label="Закрыть">
+        <svg role="img" aria-hidden="true" width="55" height="55">
+          <use xlink:href="#icon-modal-close" x="0" y="0"></use>
+        </svg>
+      </button>
+    </div>
+  </section>
+  <!-- /.write-us -->
 
   <section class="map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
