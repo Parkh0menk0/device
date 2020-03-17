@@ -11,7 +11,6 @@
   transform: translate(-50%, -25%);
 
   &__buy {
-    text-align: center;
     font-family: $gilroy;
     font-size: 17px;
     font-weight: 800;
@@ -21,6 +20,7 @@
     width: 100%;
     padding: 9px 8px 7px 12px;
 
+    text-align: center;
     letter-spacing: 4.5px;
     text-transform: uppercase;
     word-wrap: break-word;
@@ -46,6 +46,7 @@
     line-height: 36px;
 
     letter-spacing: -0.2px;
+    word-wrap: break-word;
 
     color: $black;
     opacity: 0.5;

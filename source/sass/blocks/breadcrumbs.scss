@@ -16,6 +16,7 @@
     margin-bottom: 20px;
 
     letter-spacing: 0.5px;
+    word-wrap: break-word;
 
     color: $black;
   }
@@ -47,7 +48,9 @@
     position: relative;
 
     margin-right: 37px;
+
     letter-spacing: 0.1px;
+    word-wrap: break-word;
 
     &:last-child {
       margin-right: 0;
@@ -75,6 +78,8 @@
 
   &__link {
     font: inherit;
+
+    word-wrap: break-word;
 
     opacity: 0.3;
     color: $black;

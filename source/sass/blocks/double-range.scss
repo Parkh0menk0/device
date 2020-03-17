@@ -66,9 +66,12 @@
     font-style: normal;
     line-height: 21px;
 
-    color: $black;
-    opacity: 0.2;
     margin-right: 5px;
+
+    word-wrap: break-word;
+
+    opacity: 0.2;
+    color: $black;
   }
 
   &__input {
@@ -79,6 +82,8 @@
     line-height: 21px;
 
     padding: 0;
+
+    word-wrap: break-word;
 
     opacity: 0.2;
     color: $black;

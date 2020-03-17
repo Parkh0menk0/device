@@ -8,8 +8,6 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    // padding-top: 33px;
-    // padding-bottom: 46px;
   }
 
   &__aside {
@@ -44,6 +42,7 @@
 
     letter-spacing: 3.5px;
     text-transform: uppercase;
+    word-wrap: break-word;
 
     color: $black;
 

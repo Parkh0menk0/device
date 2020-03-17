@@ -72,6 +72,7 @@
       right: 9px;
 
       counter-increment: numbers;
+      word-wrap: break-word;
 
       color: $white;
     }
@@ -88,6 +89,7 @@
     margin-bottom: 18px;
 
     letter-spacing: 0.5px;
+    word-wrap: break-word;
 
     color: $black;
   }
@@ -104,6 +106,7 @@
     margin-bottom: 43px;
 
     letter-spacing: 0.1px;
+    word-wrap: break-word;
 
     color: $grey;
   }
@@ -134,6 +137,8 @@
         font-size: 36px;
         font-weight: 300;
         line-height: 48px;
+
+        word-wrap: break-word;
       }
 
       &:last-child {
@@ -141,6 +146,8 @@
         font-size: 13px;
         font-weight: 300;
         line-height: 20px;
+
+        word-wrap: break-word;
 
         td {
           padding: 8px 0;

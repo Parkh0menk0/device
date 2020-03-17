@@ -19,34 +19,38 @@
 
   &__link {
     width: 260px;
+
     text-align: left;
+    word-wrap: break-word;
 
     color: $black;
   }
 
   &__title {
-    word-wrap: break-word;
-    margin: 0;
     font-family: $gilroy;
     font-size: 18px;
     font-weight: 800;
     font-style: normal;
     line-height: 24px;
 
+    margin: 0;
+
     letter-spacing: 0.2px;
+    word-wrap: break-word;
   }
 
   &__price {
-    word-wrap: break-word;
-    width: 100px;
-    text-align: right;
     font-family: $gilroy;
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
     line-height: 24px;
 
+    width: 100px;
+
+    text-align: right;
     letter-spacing: 0.2px;
+    word-wrap: break-word;
 
     color: $black;
   }

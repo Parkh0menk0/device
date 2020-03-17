@@ -39,6 +39,8 @@
     margin: 0;
     margin-bottom: 39px;
 
+    word-wrap: break-word;
+
     color: $black;
   }
 
@@ -54,6 +56,7 @@
     margin-bottom: 30px;
 
     letter-spacing: 0.1px;
+    word-wrap: break-word;
 
     color: $grey;
 
@@ -75,6 +78,8 @@
     padding-top: 27px;
 
     list-style: none;
+
+    word-wrap: break-word;
 
     color: $black;
   }
