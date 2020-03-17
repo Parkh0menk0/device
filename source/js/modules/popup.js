@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  var writeLink = document.querySelector('.feedback__btn');
+  var writeLink = document.querySelectorAll('.feedback__btn')[1];
   var writePopup = document.querySelector('.write-us');
   var writeClose = writePopup.querySelector('.write-us__close');
   var mapLink = document.querySelector('.feedback__map');
@@ -11,17 +11,6 @@
   var fieldName = form.querySelector('input[name=name]');
   var fieldEmail = form.querySelector('input[name=email]');
   var fieldTextarea = form.querySelector('[name=textarea]');
-
-  // console.log(writeLink);
-  // console.log(writePopup);
-  // console.log(writeClose);
-  // console.log(mapLink);
-  // console.log(mapPopup);
-  // console.log(mapClose);
-  // console.log(form);
-  // console.log(fieldName);
-  // console.log(fieldEmail);
-  // console.log(fieldTextarea);
 
   var isStorageSupport = true;
   var storage = {
