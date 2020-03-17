@@ -11,31 +11,8 @@
   transform: translate(-50%, -25%);
 
   &__buy {
-    font-family: $gilroy;
-    font-size: 17px;
-    font-weight: 800;
-    font-style: normal;
-    line-height: 24px;
-
-    width: 100%;
     padding: 9px 8px 7px 12px;
-
-    text-align: center;
     letter-spacing: 4.5px;
-    text-transform: uppercase;
-    word-wrap: break-word;
-
-    color: $black;
-    background-image: linear-gradient(transparent 40%, $gold 40%, $gold 60%, transparent 60%);
-
-    &:hover {
-      background-color: $gold;
-      background-image: none;
-    }
-
-    &:active {
-      color: rgba(0, 0, 0, 0.3);
-    }
   }
 
   &__compare {
@@ -45,11 +22,12 @@
     font-style: normal;
     line-height: 36px;
 
+    transition: opacity 0.5s ease;
     letter-spacing: -0.2px;
     word-wrap: break-word;
 
-    color: $black;
     opacity: 0.5;
+    color: $black;
 
     &:hover {
       opacity: 1;

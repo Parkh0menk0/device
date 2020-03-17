@@ -18,6 +18,11 @@
 
   &__title {
     margin: 0;
+
+    transition: opacity 0.5s ease;
+
+    opacity: 1;
+
     order: 2;
   }
 
@@ -27,6 +32,8 @@
     height: 160px;
     margin: 0;
     margin-bottom: 33px;
+
+    transition: background-color 0.5s ease;
 
     background-color: $goldenrod;
 
