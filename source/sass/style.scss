@@ -8,14 +8,15 @@
 @import "global/fonts";
 @import "global/mixins";
 @import "global/common";
-@import "blocks/user-menu";
-@import "blocks/conditions-menu";
 
 /* Common styles */
 
 /* header */
 @import "blocks/header";
 @import "blocks/logo";
+@import "blocks/user-menu";
+@import "blocks/conditions-menu";
+@import "blocks/authorization";
 @import "blocks/search-form";
 @import "blocks/catalogue";
 

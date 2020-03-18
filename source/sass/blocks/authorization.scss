@@ -1,0 +1,23 @@
+.authorization {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__link {
+    &--log-in {
+      margin-right: 19px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &--log-out {
+      padding-left: 0;
+      opacity: 0.3;
+    }
+  }
+}
