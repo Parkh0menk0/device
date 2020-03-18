@@ -5,6 +5,7 @@
 
   &__wrapper {
     padding-top: 65px;
+    padding-bottom: 55px;
   }
 
   &__user,
@@ -98,7 +99,7 @@
       width: 80px;
       height: 7px;
       margin-top: 13px;
-      margin-right: 54px;
+      margin-right: 27px;
 
       content: "";
 
@@ -108,7 +109,7 @@
 
   &__copyright {
     margin: 0;
-    margin-left: 108px;
+    margin-left: 58px;
 
     a {
       transition: opacity 0.5s ease;
