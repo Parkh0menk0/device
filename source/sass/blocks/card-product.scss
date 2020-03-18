@@ -1,11 +1,52 @@
 .card-product {
-  overflow: hidden;
   position: relative;
+
   display: flex;
+  overflow: hidden;
   flex-direction: column;
 
   justify-content: flex-start;
   align-items: flex-start;
+
+  &--new {
+    &::before {
+      position: absolute;
+      z-index: 5;
+      top: 29px;
+      right: 26px;
+
+      overflow: hidden;
+
+      width: 60px;
+      height: 60px;
+
+      content: "";
+
+      opacity: 0.1;
+      border: 2px solid $grey;
+      border-radius: 50%;
+    }
+
+    &::after {
+      font-family: $gilroy;
+      font-size: 15px;
+      font-weight: 800;
+      font-style: normal;
+      line-height: 24px;
+
+      position: absolute;
+      z-index: 5;
+      top: 47px;
+      right: 38px;
+
+      content: "new";
+      text-transform: uppercase;
+      word-wrap: break-word;
+
+      opacity: 0.1;
+      color: $grey;
+    }
+  }
 
   &__content {
     order: 1;
